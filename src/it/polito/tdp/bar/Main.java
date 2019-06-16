@@ -1,6 +1,7 @@
 package it.polito.tdp.bar;
 	
 import it.polito.tdp.bar.model.Model;
+import it.polito.tdp.bar.model.Simulatore;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -18,7 +19,7 @@ public class Main extends Application {
 			Scene scene = new Scene(root,400,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			
-			Model model = new Model();
+			Simulatore model = new Simulatore();
 			BarController controller = loader.getController();
 			controller.setModel(model);
 			
